@@ -50,6 +50,7 @@ jobs:
         with:
           node-version: '22'
           cache: 'npm'
+      - run: npm ci
       - run: npm run build  
     
       # Set up BuildKit Docker container builder to be able to build
